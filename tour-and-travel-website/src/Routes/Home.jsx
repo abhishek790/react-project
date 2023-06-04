@@ -1,6 +1,9 @@
 import React from "react";
 import Hero from "../components/Hero";
 import imgs from "../imgs/12.jpg";
+import Destination from "../components/Destination";
+import Trip from "../components/Trip";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -14,6 +17,9 @@ function Home() {
         url="/"
         btnClass="show"
       />
+      <Destination />
+      <Trip />
+      <Footer />
     </div>
   );
 }
