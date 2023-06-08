@@ -5,10 +5,10 @@ import { useState } from "react";
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
 
-  const loadOptions = async (inputValue) => {
+  const loadOptions = async (searchValue) => {
     try {
       const response = await fetch(
-        `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
+        `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${searchValue}`,
         geoApiOptions
       );
       const response_1 = await response.json();
@@ -28,6 +28,7 @@ const Search = ({ onSearchChange }) => {
 
   const handleOnChange = (searchData) => {
     setSearch(searchData);
+    console.log(searchData);
     onSearchChange(searchData);
   };
 
