@@ -12,11 +12,8 @@ function App() {
     e.preventDefault();
 
     if (editId) {
-      const editTodo = todos.find((i) => i.id === editId);
       const updatedTodos = todos.map((t) =>
-        t.id === editTodo.id
-          ? (t = { id: t.id, todo })
-          : { id: t.id, todo: t.todo }
+        t.id === editId ? (t = { id: t.id, todo }) : { id: t.id, todo: t.todo }
       );
       setTodos(updatedTodos);
       setEditid(0);

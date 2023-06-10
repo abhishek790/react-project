@@ -28,7 +28,6 @@ const Search = ({ onSearchChange }) => {
 
   const handleOnChange = (searchData) => {
     setSearch(searchData);
-    console.log(searchData);
     onSearchChange(searchData);
   };
 

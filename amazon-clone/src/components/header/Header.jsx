@@ -5,14 +5,17 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import { logo } from "../../assets/index";
 import { useState } from "react";
+import { allItems } from "../../constants/index";
 
 function Header() {
   const [showAll, setShowAll] = useState(false);
+
   return (
     <div>
-      {/* logo */}
+      {/* navbar */}
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4 ">
-        <div className="px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100 ">
+        {/* logo */}
+        <div className="headerHover ">
           <img className="w-24 mt-2" src={logo} alt="logo" />
         </div>
         {/* location */}
@@ -37,9 +40,14 @@ function Header() {
           {showAll && (
             <div>
               <ul className=" absolute w-56 h-80 top-10 left-0 overflow-y-scroll overflow-x-hidden bg-white border-[1px] border-amazon_blue text-black p-2 flex-col gap-1 z-50 ">
-                <li className="text-sm tracking-wide font-titleFont border-b-[1px] border-b-transparent hover:border-b-amazon_blue cursor-pointer duration-200">
-                  All Department
-                </li>
+                {allItems.map((item) => (
+                  <li
+                    key={item._id}
+                    className="text-sm tracking-wide font-titleFont border-b-[1px] border-b-transparent hover:border-b-amazon_blue cursor-pointer duration-200"
+                  >
+                    {item.title}
+                  </li>
+                ))}
               </ul>
             </div>
           )}
@@ -50,6 +58,17 @@ function Header() {
           <span className="w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md">
             <SearchIcon />
           </span>
+        </div>
+
+        {/* SignIn */}
+        <div className="px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100 ">
+          <p>Hello, sign in</p>
+          <p>
+            Accounts & Lists{" "}
+            <span>
+              <ArrowDropDownIcon />
+            </span>
+          </p>
         </div>
       </div>
     </div>
