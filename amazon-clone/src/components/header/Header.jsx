@@ -24,7 +24,7 @@ function Header() {
           <p className="text-sm text-lightText font-light flex flex-col">
             Deliver to{" "}
             <span className="text-sm font-semibold -mt-1 text-whiteText">
-              Oman
+              Nepal
             </span>
           </p>
         </div>
@@ -61,12 +61,27 @@ function Header() {
         </div>
 
         {/* SignIn */}
-        <div className="px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100 ">
-          <p>Hello, sign in</p>
-          <p>
+        <div className="flex flex-col items-start justify-center headerHover ">
+          <p className="text-xs text-lightText font-light">Hello, sign in</p>
+          <p className="text-sm font-semibold -mt-1 text-whiteText">
             Accounts & Lists{" "}
             <span>
               <ArrowDropDownIcon />
+            </span>
+          </p>
+        </div>
+        {/* Return & Orders */}
+        <div className="flex flex-col items-start justify-center headerHover">
+          <p className="text-xs text-lightText font-light">Returns</p>
+          <p className="text-sm font-semibold -mt-1 text-whiteText">& Orders</p>
+        </div>
+        {/* cart */}
+        <div className="flex  items-start justify-center relative headerHover">
+          <ShoppingCartIcon />
+          <p className="text-xs font-semibold mt-3 text-whiteText">
+            Cart{" "}
+            <span className="absolute text-xs -top-1  left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full flex justify-center items-center">
+              0
             </span>
           </p>
         </div>
