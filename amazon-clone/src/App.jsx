@@ -5,7 +5,7 @@ import HeaderBottom from "./components/header/HeaderBottom";
 
 function App() {
   return (
-    <div className="font-bodyFont">
+    <div className="font-bodyFont ">
       <Header />
       <HeaderBottom />
     </div>

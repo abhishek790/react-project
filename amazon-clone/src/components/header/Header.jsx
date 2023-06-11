@@ -15,7 +15,7 @@ function Header() {
       {/* navbar */}
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4 ">
         {/* logo */}
-        <div className="headerHover ">
+        <div className="px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100 ">
           <img className="w-24 mt-2" src={logo} alt="logo" />
         </div>
         {/* location */}
@@ -34,7 +34,7 @@ function Header() {
             onClick={() => setShowAll(!showAll)}
             className="w-14 h-full bg-gray-200 hover:bg-gray-300 border-2 cursor-pointer duration-300 text-sm text-amazon_blue font-titleFont flex items-center justify-center rounded-tl-md rounded-bl-md"
           >
-            All <span></span>
+            All
             <ArrowDropDownIcon />
           </span>
           {showAll && (
@@ -61,7 +61,7 @@ function Header() {
         </div>
 
         {/* SignIn */}
-        <div className="flex flex-col items-start justify-center headerHover ">
+        <div className="flex flex-col items-start justify-center px-2 h-[80%]  border border-transparent hover:border-white cursor-pointer duration-100 ">
           <p className="text-xs text-lightText font-light">Hello, sign in</p>
           <p className="text-sm font-semibold -mt-1 text-whiteText">
             Accounts & Lists{" "}
@@ -71,12 +71,12 @@ function Header() {
           </p>
         </div>
         {/* Return & Orders */}
-        <div className="flex flex-col items-start justify-center headerHover">
+        <div className="flex flex-col items-start justify-center px-2 h-[80%] border border-transparent hover:border-white cursor-pointer duration-100">
           <p className="text-xs text-lightText font-light">Returns</p>
           <p className="text-sm font-semibold -mt-1 text-whiteText">& Orders</p>
         </div>
         {/* cart */}
-        <div className="flex  items-start justify-center relative headerHover">
+        <div className="flex  items-start justify-center relative px-2 h-[80%]  border border-transparent hover:border-white cursor-pointer duration-100">
           <ShoppingCartIcon />
           <p className="text-xs font-semibold mt-3 text-whiteText">
             Cart{" "}
