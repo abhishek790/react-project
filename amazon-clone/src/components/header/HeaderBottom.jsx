@@ -16,7 +16,7 @@ function HeaderBottom() {
         setSidebar(false);
       }
     });
-  });
+  }, [ref, sidebar]);
   return (
     <div className="w-full px-4 h-[36px] bg-amazon_light text-white flex items-center">
       <ul className="flex items-center gap-2 text-sm tracking-wide">

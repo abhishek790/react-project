@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { logo } from "../../assets/index";
 import { useState } from "react";
 import { allItems } from "../../constants/index";
+import HeaderBottom from "./HeaderBottom";
 
 function Header() {
   const [showAll, setShowAll] = useState(false);
@@ -86,6 +87,7 @@ function Header() {
           </p>
         </div>
       </div>
+      <HeaderBottom />
     </div>
   );
 }

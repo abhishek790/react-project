@@ -1,13 +1,14 @@
-import { useState } from "react";
 import "./App.css";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import HeaderBottom from "./components/header/HeaderBottom";
+import Bannser from "./home/Bannser";
 
 function App() {
   return (
     <div className="font-bodyFont ">
       <Header />
-      <HeaderBottom />
+      <Bannser />
+      <Footer />
     </div>
   );
 }
