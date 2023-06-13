@@ -45,7 +45,7 @@ function HeaderBottom() {
       </ul>
       {sidebar && (
         <div className="w-full h-screen text-black fixed top-0 left-0 bg-amazon_blue bg-opacity-50 ">
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative" style={{ zIndex: 100 }}>
             <motion.div
               initial={{ x: -500, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}

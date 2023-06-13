@@ -81,7 +81,7 @@ function Bannser() {
 
   return (
     <div className="w-full">
-      <div className="w-full h-full relative">
+      <div className="w-full h-full relative" style={{ zIndex: -1 }}>
         <Slider {...settings}>
           <div>
             <img src={bannerImgOne} alt="bannerImgOne" />
