@@ -63,4 +63,8 @@ export const allItems = [
     _id: "127",
     title: "Women's Fashion",
   },
+  {
+    _id: "128",
+    title: "Electrical Gadgets",
+  },
 ];
