@@ -89,4 +89,56 @@ export const middleList = [
       },
     ],
   },
+  {
+    id: 2222,
+    title: "Make Money with Us",
+    ListItem: [
+      {
+        _id: "002",
+        ListData: [
+          "Sell products on Amazon",
+          "Sell on Amazon Business",
+          "Sell apps on Amazon",
+          "Become an Affiliate",
+          "Sell product with Us",
+          "Host an Amazon Hub",
+          "See More Make Money with Us",
+        ],
+      },
+    ],
+  },
+  {
+    id: 2223,
+    title: "Amazon Payment Products",
+    ListItem: [
+      {
+        _id: "003",
+        ListData: [
+          "Amazon Business Card",
+          "Shop with Points",
+          "Reload Your Balance",
+          "Amazon Currency Converter",
+        ],
+      },
+    ],
+  },
+  {
+    id: 2224,
+    title: "Let Us help You",
+    ListItem: [
+      {
+        _id: "004",
+        ListData: [
+          "Amazon and COVID-19",
+          "Your Account",
+          "Your Orders",
+          "Shipping Rates & Policies",
+          "Returns & Replacements",
+          "Manage Your Content and Devices",
+          "Amazon Assistant",
+          "FAQ &Help",
+        ],
+      },
+    ],
+  },
 ];
