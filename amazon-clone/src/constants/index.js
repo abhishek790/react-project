@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 export const allItems = [
   {
     _id: "112",
@@ -66,5 +68,25 @@ export const allItems = [
   {
     _id: "128",
     title: "Electrical Gadgets",
+  },
+];
+
+export const middleList = [
+  {
+    _id: 2221,
+    title: "Get to know Us",
+    ListItem: [
+      {
+        _id: "001",
+        ListData: [
+          "Careers",
+          "Blog",
+          "About Amazon",
+          "Investor Relations",
+          "Amazon Devices",
+          "Amazon Science",
+        ],
+      },
+    ],
   },
 ];
